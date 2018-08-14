@@ -1,0 +1,13 @@
+version:'2'
+services:
+    app:
+        build:
+            context: ./app
+        volumes:
+            -./data/main:/root/
+
+    test:
+        build:
+            context: ./app
+        volumes:
+            -./data/test:/root/
